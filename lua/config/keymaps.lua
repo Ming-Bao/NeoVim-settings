@@ -6,5 +6,5 @@
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 --Half page jumps center curser at the center of the screen
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<S-d>", "<C-d>zz")
+vim.keymap.set("n", "<S-u>", "<C-u>zz")
