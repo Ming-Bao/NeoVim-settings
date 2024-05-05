@@ -9,5 +9,12 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<S-d>", "<C-d>zz")
 vim.keymap.set("n", "<S-u>", "<C-u>zz")
 
---Change the above keymaps back
+--Changes <C-d> to delete everything after a line, This was overridden in the above line
 vim.keymap.set("n", "<C-d>", "<S-d>")
+
+--Added telescope command to show all functions in a file
+vim.keymap.set(
+	"n",
+	"<leader>m",
+	":lua require('telescope.builtin').lsp_document_symbols({ symbols='function' })<Enter>"
+)
