@@ -18,3 +18,7 @@ vim.keymap.set(
 	"<leader>m",
 	":lua require('telescope.builtin').lsp_document_symbols({ symbols='function' })<Enter>"
 )
+
+--Changed jump to end of line
+vim.keymap.set("n", "<C-h>", "<S-^>")
+vim.keymap.set("n", "<C-l>", "<S-$>")
