@@ -21,4 +21,4 @@ vim.keymap.set(
 
 --Changed jump to end of line
 vim.keymap.set("n", "<C-h>", "<S-^>")
-vim.keymap.set("n", "<C-l>", "<S-$>")
+vim.keymap.set("n", "<C-l>", "<S-^>")
