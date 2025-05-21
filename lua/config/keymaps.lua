@@ -22,3 +22,6 @@ vim.keymap.set(
 --Changed jump to end of line
 vim.keymap.set("n", "<C-h>", "<S-^>")
 vim.keymap.set("n", "<C-l>", "<S-^>")
+
+--Terminal <esc> to go back to normal mode
+vim.api.nvim_set_keymap("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
