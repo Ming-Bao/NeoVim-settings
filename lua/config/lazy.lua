@@ -59,3 +59,4 @@ require("lazy").setup({
 require("render-markdown").setup({
 	anti_conceal = { enabled = false },
 })
+require("config.jdtls_override")
