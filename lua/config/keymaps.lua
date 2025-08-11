@@ -16,12 +16,11 @@ vim.keymap.set("n", "<C-d>", "<S-d>")
 vim.keymap.set(
 	"n",
 	"<leader>m",
-	":lua require('telescope.builtin').lsp_document_symbols({ symbols='function' })<Enter>"
+	':lua require(\'fzf-lua\').lsp_document_symbols({symbol_types = { "Function", "Method" }})<Enter>'
 )
-
 --Changed jump to end of line
-vim.keymap.set("n", "<C-h>", "<S-^>")
-vim.keymap.set("n", "<C-l>", "<S-^>")
+vim.keymap.set("n", "<C-h>", "0")
+vim.keymap.set("n", "<C-l>", "$")
 
 --Terminal <esc> to go back to normal mode
 vim.api.nvim_set_keymap("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })

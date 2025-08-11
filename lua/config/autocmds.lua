@@ -7,3 +7,16 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.spell = false
 	end,
 })
+-- Disable autoformat for lua files
+vim.api.nvim_create_autocmd({ "FileType" }, {
+	pattern = { "markdown" },
+	callback = function()
+		vim.b.autoformat = false
+	end,
+})
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "markdown",
+	callback = function()
+		vim.diagnostic.enable(false) -- disable diagnostics for current buffer
+	end,
+})
