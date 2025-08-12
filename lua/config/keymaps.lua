@@ -19,7 +19,7 @@ vim.keymap.set(
 	':lua require(\'fzf-lua\').lsp_document_symbols({symbol_types = { "Function", "Method" }})<Enter>'
 )
 --Changed jump to end of line
-vim.keymap.set("n", "<C-h>", "0")
+vim.keymap.set("n", "<C-h>", "^")
 vim.keymap.set("n", "<C-l>", "$")
 
 --Terminal <esc> to go back to normal mode
